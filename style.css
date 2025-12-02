@@ -1,44 +1,135 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Eman Gul — DevOps Engineer</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header class="hero">
-    <div class="container">
-      <img src="profile.jpg" alt="Eman Gul" class="profile-pic">
-      <h1>Eman Gul</h1>
-      <p class="tagline">DevOps Engineer | Cloud • Automation • AI-driven DevOps</p>
-      <div class="links">
-        <a href="https://github.com/Eman-gul457" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/eman-gul-ghulam-muhammad-23097b370" target="_blank">LinkedIn</a>
-        <a href="mailto:emangulghulammuhammad@gmail.com">Email</a>
-      </div>
-    </div>
-  </header>
+:root{
+  --bg:#0a0f1f;
+  --card:#0f172a;
+  --accent:#3b82f6;
+  --text:#e2e8f0;
+  --text-light:#94a3b8;
+}
 
-  <main class="container">
-    <section id="about">
-      <h2>About</h2>
-      <p>DevOps Engineer with hands-on experience in cloud infrastructure, CI/CD pipelines, automation, and containerized deployments. I work across AWS, Kubernetes, Docker, Terraform, and Linux to build scalable production systems. My focus is improving deployment speed, system reliability, and operational efficiency through automation and integrated Agentic AI for pipeline intelligence and troubleshooting.</p>
-    </section>
+*{box-sizing:border-box;margin:0;padding:0;font-family:Inter,Arial,Helvetica,sans-serif}
+body{
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+}
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul class="skills-grid">
-        <li><strong>Cloud:</strong> AWS (EC2, S3, VPC, RDS, IAM, Route53, Lambda)</li>
-        <li><strong>Infrastructure as Code:</strong> Terraform</li>
-        <li><strong>Containers:</strong> Docker, Docker Compose</li>
-        <li><strong>Orchestration:</strong> Kubernetes (KIND, EKS)</li>
-        <li><strong>CI/CD:</strong> Jenkins, GitHub Actions</li>
-        <li><strong>Configuration Management:</strong> Ansible</li>
-        <li><strong>Scripting:</strong> Python, Bash, PowerShell</li>
-        <li><strong>Monitoring:</strong> Prometheus, Grafana</li>
-        <li><strong>Operating Systems:</strong> Linux Administration</li>
-      </ul>
-    </section>
+.container{max-width:1100px;margin:0 auto;padding:20px}
 
-    <section id="projects">
+.hero-section{
+  position:relative;
+  background:linear-gradient(135deg,#1e3a8a,#0f172a);
+  padding:90px 20px 110px;
+  text-align:center;
+  border-bottom-left-radius:50px;
+  border-bottom-right-radius:50px;
+  overflow:hidden;
+}
+.hero-section::before{
+  content:"";
+  position:absolute;
+  top:-40px;left:-60px;
+  width:400px;height:400px;
+  background:rgba(255,255,255,0.08);
+  border-radius:50%;
+  filter:blur(60px);
+}
+.hero-section::after{
+  content:"";
+  position:absolute;
+  bottom:-50px;right:-70px;
+  width:450px;height:450px;
+  background:rgba(59,130,246,0.18);
+  border-radius:50%;
+  filter:blur(80px);
+}
+
+.profile-pic{
+  width:150px;height:150px;
+  border-radius:50%;
+  border:4px solid #fff;
+  object-fit:cover;
+  margin-bottom:15px;
+  box-shadow:0 0 25px rgba(0,0,0,0.4);
+}
+
+.name{
+  font-size:2.6rem;
+  font-weight:700;
+}
+.role{
+  font-size:1.1rem;
+  color:var(--text-light);
+  margin-bottom:18px;
+}
+
+.social-links a{
+  color:#fff;
+  margin:0 10px;
+  padding:8px 16px;
+  background:rgba(255,255,255,0.1);
+  border-radius:8px;
+  border:1px solid rgba(255,255,255,0.2);
+  text-decoration:none;
+  transition:0.3s;
+}
+.social-links a:hover{
+  background:rgba(255,255,255,0.25);
+}
+
+.card{
+  background:var(--card);
+  padding:28px;
+  border-radius:18px;
+  margin:28px 0;
+  border:1px solid rgba(255,255,255,0.06);
+  box-shadow:0 8px 25px rgba(0,0,0,0.25);
+}
+
+h2{
+  font-size:1.6rem;
+  border-left:5px solid var(--accent);
+  padding-left:12px;
+  margin-bottom:18px;
+}
+
+.skills-list{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+  list-style:none;
+}
+.skills-list li strong{color:var(--accent)}
+
+.project{
+  margin-bottom:22px;
+  padding-bottom:16px;
+  border-bottom:1px dashed rgba(255,255,255,0.15);
+}
+.project h3{
+  font-size:1.2rem;
+  color:#fff;
+  margin-bottom:10px;
+}
+.project li{
+  color:var(--text-light);
+  margin-bottom:6px;
+}
+
+.card a{
+  color:var(--accent);
+  text-decoration:none;
+}
+.card a:hover{text-decoration:underline}
+
+.site-footer{
+  text-align:center;
+  padding:25px;
+  color:var(--text-light);
+  font-size:0.9rem;
+  margin-top:40px;
+}
+
+@media(max-width:600px){
+  .name{font-size:2.1rem}
+  .hero-section{padding:70px 20px 90px}
+}
