@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Eman Gul — DevOps Engineer</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="hero">
-    <div class="container">
-      <img src="profile.jpg" alt="Eman Gul" class="profile-pic">
-      <h1>Eman Gul</h1>
-      <p class="tagline">DevOps Engineer | Cloud • Automation • AI-driven DevOps</p>
-      <div class="links">
+
+  <header class="hero-section">
+    <div class="overlay"></div>
+    <div class="hero-content container">
+      <img src="https://github.com/user-attachments/assets/bf529ad3-73f8-4d0d-9293-53173a28e917" class="profile-pic" alt="Eman Gul">
+      <h1 class="name">Eman Gul</h1>
+      <p class="role">DevOps Engineer</p>
+      <div class="social-links">
         <a href="https://github.com/Eman-gul457" target="_blank">GitHub</a>
         <a href="https://www.linkedin.com/in/eman-gul-ghulam-muhammad-23097b370" target="_blank">LinkedIn</a>
         <a href="mailto:emangulghulammuhammad@gmail.com">Email</a>
@@ -21,15 +23,16 @@
   </header>
 
   <main class="container">
-    <section id="about">
-      <h2>About</h2>
-      <p>DevOps Engineer with hands-on experience in cloud infrastructure, CI/CD pipelines, automation, and containerized deployments. I work across AWS, Kubernetes, Docker, Terraform, and Linux to build scalable production systems. My focus is improving deployment speed, system reliability, and operational efficiency through automation and integrated Agentic AI for pipeline intelligence and troubleshooting.</p>
+
+    <section id="about" class="card">
+      <h2>About Me</h2>
+      <p>DevOps Engineer with hands-on expertise in cloud infrastructure, Kubernetes orchestration, CI/CD pipeline automation, and production container deployments. Skilled in Terraform, Ansible, AWS, Linux, Docker, and GitHub Actions. I build scalable, automated, and AI-assisted DevOps systems to improve deployment speed, reliability, and operational intelligence.</p>
     </section>
 
-    <section id="skills">
+    <section id="skills" class="card">
       <h2>Skills</h2>
-      <ul class="skills-grid">
-        <li><strong>Cloud:</strong> AWS (EC2, S3, VPC, RDS, IAM, Route53, Lambda)</li>
+      <ul class="skills-list">
+        <li><strong>Cloud:</strong> AWS (EC2, S3, VPC, RDS, IAM, Lambda, Route53)</li>
         <li><strong>Infrastructure as Code:</strong> Terraform</li>
         <li><strong>Containers:</strong> Docker, Docker Compose</li>
         <li><strong>Orchestration:</strong> Kubernetes (KIND, EKS)</li>
@@ -41,83 +44,30 @@
       </ul>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="card">
       <h2>Projects</h2>
 
-      <article class="project">
-        <h3>Blackmode Backend API (Dockerized Deployment)</h3>
-        <ul>
-          <li>Reduced deployment time by 60% through full backend containerization and workflow optimization.</li>
-          <li>Lowered recurring API issues by 40% with structured logging and secure file handling.</li>
-        </ul>
-      </article>
+      <article class="project"><h3>1. Blackmode Backend API (Dockerized Deployment)</h3><ul><li>Reduced deployment time by 60% through optimized Docker-based workflow.</li><li>Improved API stability by 40% using structured logging and secure upload handling.</li></ul></article>
 
-      <article class="project">
-        <h3>Agentic AI – FastAPI Production API</h3>
-        <ul>
-          <li>Increased environment consistency by 90% through improved CI/CD and container tuning.</li>
-          <li>Reduced API response issues by 35% by optimizing worker processes and API structure.</li>
-        </ul>
-      </article>
+      <article class="project"><h3>2. Agentic AI – FastAPI Production API</h3><ul><li>Boosted environment consistency by 90% by rebuilding CI/CD pipeline.</li><li>Reduced API response issues by 35% through container and worker optimization.</li></ul></article>
 
-      <article class="project">
-        <h3>Two‑Tier Flask App with MySQL (Jenkins CI/CD)</h3>
-        <ul>
-          <li>Automated full CI/CD pipeline reducing manual steps by 75%.</li>
-          <li>Achieved 95% pipeline success rate with structured build, test, and deployment stages.</li>
-        </ul>
-      </article>
+      <article class="project"><h3>3. Two-Tier Flask + MySQL (Jenkins CI/CD)</h3><ul><li>Automated full CI/CD pipeline reducing manual work by 75%.</li><li>Achieved 95% deployment success rate through structured build/test/deploy stages.</li></ul></article>
 
-      <article class="project">
-        <h3>Kubernetes Deployment Project</h3>
-        <ul>
-          <li>Deployed microservices using KIND with namespaces, deployments, and services.</li>
-          <li>Enabled reliable cluster‑based testing and isolation for each microservice component.</li>
-        </ul>
-      </article>
+      <article class="project"><h3>4. Kubernetes Microservices Deployment</h3><ul><li>Deployed microservices using namespaces, services, and deployments.</li><li>Provided reliable cluster-based isolation and real behavior testing.</li></ul></article>
 
-      <article class="project">
-        <h3>Jenkins → Ansible → Docker Automation</h3>
-        <ul>
-          <li>Automated end‑to‑end deployment workflow integrating Jenkins, Ansible, and Docker.</li>
-          <li>Improved deployment reliability and reduced config errors across servers.</li>
-        </ul>
-      </article>
+      <article class="project"><h3>5. Jenkins → Ansible → Docker Automation</h3><ul><li>Automated environment provisioning using Ansible roles.</li><li>Integrated Docker + Jenkins for seamless application deployment.</li></ul></article>
 
-      <article class="project">
-        <h3>Nginx Deployment with Ansible</h3>
-        <ul>
-          <li>Automated Nginx setup and configuration for production environments.</li>
-          <li>Delivered consistent server configurations with repeatable Ansible roles.</li>
-        </ul>
-      </article>
+      <article class="project"><h3>6. Nginx Deployment with Ansible</h3><ul><li>Automated Nginx setup across environments with reusable roles.</li><li>Ensured consistent server configuration and reduced provisioning time.</li></ul></article>
 
-      <article class="project">
-        <h3>Flask + MySQL App with Docker Compose</h3>
-        <ul>
-          <li>Built multi‑container architecture with persistent storage and health checks.</li>
-          <li>Improved reliability and environment consistency for local and staging deployments.</li>
-        </ul>
-      </article>
+      <article class="project"><h3>7. Flask + MySQL with Docker Compose</h3><ul><li>Developed multi-container setup with persistent volumes.</li><li>Improved stability and easier local/staging deployments.</li></ul></article>
 
-      <article class="project">
-        <h3>System Admin & Scripting Lab</h3>
-        <ul>
-          <li>Configured Linux and Windows servers hosting Flask apps with SSL.</li>
-          <li>Automated provisioning and maintenance using Bash and PowerShell scripts.</li>
-        </ul>
-      </article>
+      <article class="project"><h3>8. System Admin & Scripting Lab</h3><ul><li>Configured Linux & Windows servers hosting SSL-enabled Flask apps.</li><li>Automated provisioning tasks in Bash & PowerShell.</li></ul></article>
 
-      <article class="project">
-        <h3>Linux Monitoring & Hardening Automation</h3>
-        <ul>
-          <li>Developed Bash script for system hardening, logging, and firewall automation.</li>
-          <li>Enabled fast security enforcement across multiple Linux systems.</li>
-        </ul>
-      </article>
+      <article class="project"><h3>9. Linux Monitoring & Hardening Automation</h3><ul><li>Created Bash script for system hardening + firewall automation.</li><li>Enabled fast enforcement of security standards across systems.</li></ul></article>
+
     </section>
 
-    <section id="certifications">
+    <section id="certifications" class="card">
       <h2>Certifications</h2>
       <ul>
         <li>ACP – API Certified Practitioner (2025)</li>
@@ -126,35 +76,35 @@
         <li>Python Crash Course</li>
         <li>Git & GitHub Training</li>
         <li>Google Cybersecurity Professional (2025)</li>
-        <li>Tools of the Trade: Linux and SQL — Google</li>
+        <li>Tools of the Trade: Linux & SQL — Google</li>
         <li>Foundation of Cybersecurity — Google</li>
         <li>Assets, Threats, and Vulnerabilities — Google</li>
         <li>Manage Security Risk — Google</li>
-        <li>Network and Network Security — Google</li>
-        <li>Sound the Alarm: Detection and Response — Google</li>
-        <li>Advanced Commands in Linux — Coursera</li>
-        <li>Files and Directories in the Linux Filesystem — Coursera</li>
-        <li>Linux I/O Redirection for DevOps — Coursera</li>
-        <li>Linux Introduction to Shell Scripting — Coursera</li>
-        <li>Start Writing Prompts Like a Pro — Google</li>
-        <li>Foundation of Project Management — Google</li>
+        <li>Network & Network Security — Google</li>
+        <li>Sound the Alarm — Google</li>
+        <li>Advanced Linux Commands — Coursera</li>
+        <li>Linux Filesystem — Coursera</li>
+        <li>Linux I/O Redirection — Coursera</li>
+        <li>Shell Scripting — Coursera</li>
+        <li>Writing Prompts — Google</li>
+        <li>Project Management — Google</li>
         <li>Automate Tasks with Python — Google</li>
       </ul>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="card">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:emangulghulammuhammad@gmail.com">emangulghulammuhammad@gmail.com</a></p>
       <p>GitHub: <a href="https://github.com/Eman-gul457" target="_blank">github.com/Eman-gul457</a></p>
       <p>LinkedIn: <a href="https://www.linkedin.com/in/eman-gul-ghulam-muhammad-23097b370" target="_blank">linkedin.com/in/eman-gul-ghulam-muhammad-23097b370</a></p>
       <p>Location: Karachi, Pakistan</p>
     </section>
+
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>© 2025 Eman Gul — DevOps Engineer</p>
-    </div>
+    <p>© 2025 Eman Gul — DevOps Engineer</p>
   </footer>
+
 </body>
 </html>
