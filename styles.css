@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
 :root{
   --bg:#050a14;
   --panel:#0b1220;
@@ -15,15 +17,27 @@
 html{scroll-behavior:smooth}
 body{
   margin:0;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  background: radial-gradient(1200px 600px at 20% 10%, rgba(34,211,238,.10), transparent 55%),
-              radial-gradient(900px 500px at 85% 15%, rgba(34,197,94,.10), transparent 55%),
-              var(--bg);
+  font-family:"Manrope", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background:
+    radial-gradient(1200px 600px at 20% 10%, rgba(34,211,238,.12), transparent 55%),
+    radial-gradient(900px 500px at 85% 15%, rgba(34,197,94,.10), transparent 55%),
+    radial-gradient(900px 700px at 15% 80%, rgba(56,189,248,.10), transparent 60%),
+    var(--bg);
   color:var(--text);
+}
+
+h1,h2,h3,h4,.hero-sub,.section-pill,.btn,.tag{
+  font-family:"Space Grotesk","Manrope",sans-serif;
 }
 
 a{color:inherit;text-decoration:none}
 .container{width:min(1100px, 92%); margin:0 auto}
+
+:focus-visible{
+  outline:2px solid rgba(34,211,238,.8);
+  outline-offset:3px;
+  border-radius:10px;
+}
 
 .nav{
   position:sticky; top:0; z-index:50;
@@ -324,7 +338,24 @@ a{color:inherit;text-decoration:none}
   color: rgba(148,163,184,.95);
 }
 .acc-panel ul{margin:0; padding-left: 16px}
+.acc-panel p{margin:10px 0}
 .acc-open + .acc-panel{display:block}
+
+.cert-link{
+  display:inline-flex; align-items:center; gap:8px;
+  padding:9px 12px;
+  border-radius:999px;
+  border:1px solid rgba(34,211,238,.35);
+  background: rgba(11,18,32,.8);
+  color: rgba(229,231,235,.95);
+  font-weight:800;
+  margin-bottom:8px;
+}
+.cert-link:after{
+  content:"\u2197";
+  font-size:12px;
+}
+.cert-link:hover{border-color: rgba(34,211,238,.7)}
 
 .extra-train{margin-top:8px}
 .contact-list{display:flex; flex-direction:column; gap:10px}
@@ -333,3 +364,7 @@ a{color:inherit;text-decoration:none}
 
 .service-list{margin:10px 0 0; padding-left: 18px; color: rgba(148,163,184,.95)}
 .footer{margin-top:22px; padding: 18px 0 6px; border-top: 1px solid var(--line)}
+
+@media (prefers-reduced-motion: reduce){
+  .btn,.card{transition:none}
+}
